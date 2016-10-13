@@ -1,2 +1,107 @@
-*{box-sizing:border-box}body{background-color:#0F1626;font-family:'Work Sans', sans-serif;font-weight:400;color:#F5F5F5;font-size:16px}h1,h2,h3,h4{color:#FF533D;font-family:'Work Sans', sans-serif;font-weight:200;font-style:italic;margin:1rem 0}h1{font-size:3.998rem}h2{font-size:2.827rem}h3{font-size:1.999rem}h4{font-size:1.414rem}h5{font-size:1rem}h6{font-size:0.707rem}a{text-decoration:none;color:#AB987A;font-style:italic}.content-wrap{display:flex;align-items:center;justify-content:center;position:absolute;top:0;bottom:0;left:0;right:0;text-align:center}.content-wrap svg{width:100px}.twitter-path{stroke-dasharray:1000;stroke-dashoffset:1000;animation:dash 2.5s linear forwards}@keyframes dash{to{stroke-dashoffset:0}}
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: #191923;
+  color: #F5F5F5;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  height: 100%; }
+
+h1, h2, h3, h4 {
+  color: #FF533D;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  margin: 1rem 0; }
+
+h1 {
+  font-size: 3.998rem; }
+
+h2 {
+  font-size: 2.827rem; }
+
+h3 {
+  font-size: 1.999rem; }
+
+h4 {
+  font-size: 1.414rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.707rem; }
+
+a {
+  text-decoration: none;
+  color: #4484CE;
+  font-style: italic; }
+
+.content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+.social {
+  margin: 0;
+  text-align: center; }
+  .social a {
+    display: inline-block;
+    position: relative;
+    margin: 1rem;
+    padding: 0.22rem;
+    height: 2.7rem;
+    width: 2.7rem; }
+  .social svg {
+    height: 100%;
+    width: 100%; }
+
+.icon-1:hover, .icon-2:hover, .icon-3:hover, .icon-4:hover, .icon-5:hover {
+  border-radius: 100%;
+  color: #AB987A;
+  fill: #0F1626;
+  transform: scale(1.25);
+  transition: background-color .5s, transform .5s ease-out; }
+
+.icon-1 {
+  color: #d94a26;
+  fill: #d94a26; }
+  .icon-1:hover {
+    background: #d94a26; }
+
+.icon-2 {
+  color: #d96e26;
+  fill: #d96e26; }
+  .icon-2:hover {
+    background: #d96e26; }
+
+.icon-3 {
+  color: #d99126;
+  fill: #d99126; }
+  .icon-3:hover {
+    background: #d99126; }
+
+.icon-4 {
+  color: #d9b526;
+  fill: #d9b526; }
+  .icon-4:hover {
+    background: #d9b526; }
+
+.icon-5 {
+  color: #d9d926;
+  fill: #d9d926; }
+  .icon-5:hover {
+    background: #d9d926; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,13 +1,16 @@
 * {box-sizing: border-box;}
 
-html {}
+html {
+  height: 100%;
+}
 
 body {
-  background-color: $navy;
+  background-color: $summit;
+  color: $offwhite;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  color: $offwhite;
   font-size: 16px;
+  height: 100%;
 }
 
 h1,h2,h3,h4 {
@@ -27,7 +30,7 @@ h6 {font-size: 0.707rem;}
 
 a {
   text-decoration: none;
-  color: $gold;
+  color: $cerulean;
   font-style: italic;
 }
 
@@ -41,24 +44,59 @@ a {
   left: 0;
   right: 0;
   text-align: center;
+}
+
+// .twitter-path {
+//   stroke-dasharray: 1000;
+//   stroke-dashoffset: 1000;
+//   // animation: dash 2s infinite linear alternate; /* forward*/
+//   animation: dash 2.5s linear forwards; /* forward*/
+// }
+
+// @keyframes dash {
+//   // from {
+//   //   stroke-dashoffset: 1000;
+//   // }
+//   to {
+//     stroke-dashoffset: 0;
+//   }
+// }
+
+.social {
+  margin: 0;
+  text-align: center;
+  a {
+    display: inline-block;
+    position: relative;
+    margin: 1rem;
+    padding: 0.22rem;
+    height: 2.7rem;
+    width: 2.7rem;
+  }
   svg {
-    width: 100px;
+    height: 100%;
+    width: 100%;
   }
 }
 
-.twitter-path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  // animation: dash 2s infinite linear alternate; /* forward*/
-  animation: dash 2.5s linear forwards; /* forward*/
+%social-icon-hover {
+  border-radius: 100%;
+  color: $gold;// IE8
+  fill: $navy;
+  transform: scale(1.25);
+  transition: background-color .5s, transform .5s ease-out;
 }
 
-@keyframes dash {
-  // from {
-  //   stroke-dashoffset: 1000;
-  // }
-  to {
-    stroke-dashoffset: 0;
+// Neat color trick, <3 Sass
+@for $i from 1 through 5 {
+  .icon-#{$i} {
+    color: hsl($i * 12, 70, 50); // IE8
+    fill: hsl($i * 12, 70, 50);
+    &:hover {
+      background: hsl($i * 12, 70, 50);
+      @extend %social-icon-hover;
+    }
   }
 }
+
 
