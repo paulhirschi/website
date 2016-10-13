@@ -12,8 +12,9 @@ body {
 
 h1,h2,h3,h4 {
   color: $coral;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-style: italic;
   margin: 1rem 0;
 }
 
@@ -23,3 +24,41 @@ h3 {font-size: 1.999rem;}
 h4 {font-size: 1.414rem;}
 h5 {font-size: 1rem;}
 h6 {font-size: 0.707rem;}
+
+a {
+  text-decoration: none;
+  color: $gold;
+  font-style: italic;
+}
+
+.content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  svg {
+    width: 100px;
+  }
+}
+
+.twitter-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  // animation: dash 2s infinite linear alternate; /* forward*/
+  animation: dash 2.5s linear forwards; /* forward*/
+}
+
+@keyframes dash {
+  // from {
+  //   stroke-dashoffset: 1000;
+  // }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
