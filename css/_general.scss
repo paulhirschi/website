@@ -90,7 +90,7 @@ a {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  @include breakpoint(660px) {
+  @include breakpoint(740px) {
     flex-direction: row;
   }
   a {

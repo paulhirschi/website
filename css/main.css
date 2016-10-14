@@ -90,7 +90,7 @@ a {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column; }
-  @media (max-width: 660px) {
+  @media (max-width: 740px) {
     .social {
       flex-direction: row; } }
   .social a {
