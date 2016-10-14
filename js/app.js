@@ -1,3 +1,4 @@
+
 // dynamically add stylesheet
 function addCss(file) {
   var head = document.head;
@@ -15,6 +16,16 @@ function addCss(file) {
 
   head.appendChild(link);
 }
+
+TweenMax.staggerTo('[class^="icon"]', 2, {
+  delay: 0.5,
+  opacity: 1,
+  scale: 1,
+  y: 0,
+  // x: 0,
+  // rotation: 360,
+  ease: Elastic.easeOut
+}, 0.2);
 
 // document.getElementById('moon').onclick = function() {
 //   console.log('dark');
