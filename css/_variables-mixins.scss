@@ -25,3 +25,9 @@ $blue: #0375B4;
 @mixin border-radius($radius) {
   border-radius: $radius;
 }
+
+@mixin breakpoint($point) {
+  @media (max-width: $point){
+    @content;
+  }
+}

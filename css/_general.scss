@@ -27,6 +27,20 @@ h4 {font-size: 1.414rem;}
 h5 {font-size: 1rem;}
 h6 {font-size: 0.707rem;}
 
+@include breakpoint(660px) {
+  h1 {font-size: 2.827rem;}
+  h2 {font-size: 1.999rem;}
+  h3 {font-size: 1.414rem;}
+  h4 {font-size: 1rem;}
+  h5 {font-size: 1rem;}
+  h6 {font-size: 0.707rem;}
+}
+
+@include breakpoint(470px) {
+  h1 {font-size: 1.999rem;}
+  p {font-size: 0.707rem;}
+}
+
 p {
   letter-spacing: 1px;
   line-height: 1.5rem;
@@ -67,12 +81,21 @@ a {
 // }
 
 .social {
-  margin: 0;
-  text-align: center;
+  margin: 0 0 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  @include breakpoint(660px) {
+    flex-direction: row;
+  }
   a {
     display: inline-block;
-    position: relative;
-    margin: 1rem;
+    margin: 0.5rem 1rem;
     padding: 0.2rem;
     height: 2rem;
     width: 2rem;
@@ -86,7 +109,7 @@ a {
 [class^="icon"] {
   transform: scale(0);
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateX(-50px);
 }
 
 %social-icon-hover {

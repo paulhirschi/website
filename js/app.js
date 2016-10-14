@@ -21,7 +21,7 @@ TweenMax.staggerTo('[class^="icon"]', 2, {
   delay: 0.5,
   opacity: 1,
   scale: 1,
-  y: 0,
+  x: 0,
   // x: 0,
   // rotation: 360,
   ease: Elastic.easeOut
