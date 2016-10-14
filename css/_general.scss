@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: $summit;
+  background-color: $navy;
   color: $offwhite;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
@@ -14,10 +14,9 @@ body {
 }
 
 h1,h2,h3,h4 {
-  color: $coral;
+  color: $blue;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 200;
-  font-style: italic;
+  font-weight: 700;
   margin: 1rem 0;
 }
 
@@ -27,6 +26,11 @@ h3 {font-size: 1.999rem;}
 h4 {font-size: 1.414rem;}
 h5 {font-size: 1rem;}
 h6 {font-size: 0.707rem;}
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
 
 a {
   text-decoration: none;
@@ -69,9 +73,9 @@ a {
     display: inline-block;
     position: relative;
     margin: 1rem;
-    padding: 0.22rem;
-    height: 2.7rem;
-    width: 2.7rem;
+    padding: 0.2rem;
+    height: 2rem;
+    width: 2rem;
   }
   svg {
     height: 100%;
@@ -79,9 +83,15 @@ a {
   }
 }
 
+[class^="icon"] {
+  transform: scale(0);
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
 %social-icon-hover {
   border-radius: 100%;
-  color: $gold;// IE8
+  color: $navy;// IE8
   fill: $navy;
   transform: scale(1.25);
   transition: background-color .5s, transform .5s ease-out;
