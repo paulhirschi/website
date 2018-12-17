@@ -62,7 +62,8 @@ h6 {
     font-size: 0.707rem; } }
 p {
   letter-spacing: 1px;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  margin: 0 0 0.25rem; }
 
 a {
   text-decoration: none;
@@ -144,5 +145,18 @@ a {
   fill: #d9d926; }
   .icon-5:hover {
     background: #d9d926; }
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  height: 2.25rem;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  background-color: #152637;
+  border-radius: 2rem; }
+  .languages svg {
+    height: 100%;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

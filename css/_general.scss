@@ -44,6 +44,7 @@ h6 {font-size: 0.707rem;}
 p {
   letter-spacing: 1px;
   line-height: 1.5rem;
+  margin: 0 0 0.25rem;
 }
 
 a {
@@ -132,4 +133,17 @@ a {
   }
 }
 
-
+.languages {
+  display: flex;
+  flex-direction: row;
+  height: 2.25rem;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  background-color: lighten($navy, 5%);
+  border-radius: 2rem;
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
