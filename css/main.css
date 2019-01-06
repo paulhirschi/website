@@ -150,9 +150,9 @@ a {
 .languages {
   display: flex;
   flex-direction: row;
-  height: 2.25rem;
+  height: 2.5rem;
   width: 95%;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   padding: 0.5rem 0;
   background-color: #152637;
   border-radius: 2rem; }
