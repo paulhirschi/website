@@ -1,0 +1,33 @@
+$gold: #C0B283;
+$mutedGold: #DCD0C0;
+$paper: #F4F4F4;
+$charcoal: #373737;
+
+$navy: hsl(210, 45, 10);
+$summit: #191923;
+// $navy: #0F1626;
+$gold: #AB987A;
+$coral: #FF533D;
+$offwhite: #F5F5F5;
+
+$denim: #1A2930;
+$steel: #0A1616;
+$gunmetal: #233237;
+
+$cerulean: #4484CE;
+
+$yellow: #E7CE3E;
+$orange: #d99126;
+$green: #00B16A;
+
+$blue: #0375B4;
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin breakpoint($point) {
+  @media (max-width: $point){
+    @content;
+  }
+}

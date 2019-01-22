@@ -1,0 +1,150 @@
+* {box-sizing: border-box;}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $navy;
+  color: $offwhite;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+}
+
+h1,h2,h3,h4 {
+  color: $blue;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h1 {font-size: 3.998rem;}
+h2 {font-size: 2.827rem;}
+h3 {font-size: 1.999rem;}
+h4 {font-size: 1.414rem;}
+h5 {font-size: 1rem;}
+h6 {font-size: 0.707rem;}
+
+@include breakpoint(660px) {
+  h1 {font-size: 2.827rem;}
+  h2 {font-size: 1.999rem;}
+  h3 {font-size: 1.414rem;}
+  h4 {font-size: 1rem;}
+  h5 {font-size: 1rem;}
+  h6 {font-size: 0.707rem;}
+}
+
+@include breakpoint(470px) {
+  h1 {font-size: 1.999rem;}
+  p {font-size: 0.707rem;}
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  margin: 0 0 0.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: $cerulean;
+  font-style: italic;
+}
+
+.content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+// .twitter-path {
+//   stroke-dasharray: 1000;
+//   stroke-dashoffset: 1000;
+//   // animation: dash 2s infinite linear alternate; /* forward*/
+//   animation: dash 2.5s linear forwards; /* forward*/
+// }
+
+// @keyframes dash {
+//   // from {
+//   //   stroke-dashoffset: 1000;
+//   // }
+//   to {
+//     stroke-dashoffset: 0;
+//   }
+// }
+
+.social {
+  margin: 0 0 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  @include breakpoint(740px) {
+    flex-direction: row;
+  }
+  a {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    padding: 0.2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+[class^="icon"] {
+  transform: scale(0);
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+%social-icon-hover {
+  border-radius: 100%;
+  color: $navy;// IE8
+  fill: $navy;
+  transform: scale(1.25);
+  transition: background-color .5s, transform .5s ease-out;
+}
+
+// Neat color trick, <3 Sass
+@for $i from 1 through 5 {
+  .icon-#{$i} {
+    color: hsl($i * 12, 70, 50); // IE8
+    fill: hsl($i * 12, 70, 50);
+    &:hover {
+      background: hsl($i * 12, 70, 50);
+      @extend %social-icon-hover;
+    }
+  }
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+  width: 95%;
+  margin: 1rem auto 0;
+  padding: 0.5rem 0;
+  background-color: lighten($navy, 5%);
+  border-radius: 2rem;
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
