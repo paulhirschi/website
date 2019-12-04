@@ -32,7 +32,8 @@ const code = document.querySelector(".the-code")
 const closeCode = document.querySelector(".close-code")
 
 heart.addEventListener("click", function(e) {
-  code.style.display="flex"
+  // code.style.display="flex"
+  window.location.href = "https://elderscrolls.fandom.com/wiki/Dragon_Alphabet"
 })
 
 closeCode.addEventListener("click", function(e) {
