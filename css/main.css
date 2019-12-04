@@ -188,4 +188,14 @@ a {
   .the-code .close-code:hover {
     cursor: pointer; }
 
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  flex-wrap: wrap; }
+  .image-container img {
+    margin: 2em;
+    width: 250px;
+    border: 2px solid white; }
+
 /*# sourceMappingURL=main.css.map */
