@@ -48,10 +48,16 @@ p {
   margin: 0 0 0.25rem;
 }
 
+.small { font-size: 0.707rem; }
+
 a {
   text-decoration: none;
   color: $cerulean;
   font-style: italic;
+}
+
+.gap {
+  margin: 0 0 1rem;
 }
 
 .content-wrap {
@@ -191,5 +197,58 @@ a {
     margin: 2em;
     width: 250px;
     border: 2px solid white;
+  }
+}
+
+.scary-lady-container {
+  display: flex;
+  align-items: center;;
+  // justify-content: center;
+  flex-direction: column;
+}
+
+.scary-lady-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lighten($blue, 20%);
+  width: 100%;
+}
+
+.the-scary-lady {
+  width: 150px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: $denim;
+  @include border-radius(5px);
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3rem;
+  border: 2px solid $blue;
+  @include border-radius(5px);
+}
+
+.book-audio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.book-audio-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  @include border-radius(5px);
+  border: 2px solid $blue;
+  audio {
+    width: 100%;
   }
 }

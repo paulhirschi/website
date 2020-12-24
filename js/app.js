@@ -26,27 +26,3 @@ TweenMax.staggerTo('[class^="icon"]', 2, {
   // rotation: 360,
   ease: Elastic.easeOut
 }, 0.2);
-
-const heart = document.querySelector(".heart-icon")
-const code = document.querySelector(".the-code")
-const closeCode = document.querySelector(".close-code")
-
-heart.addEventListener("click", function(e) {
-  code.style.display="flex"
-})
-
-closeCode.addEventListener("click", function(e) {
-  code.style.display="none"
-})
-
-// document.getElementById('moon').onclick = function() {
-//   console.log('dark');
-//   addCss('css/dark.css');
-// };
-
-// document.getElementById('sun').onclick = function() {
-//   console.log('light');
-//   addCss('css/light.css');
-// };
-
-// addCss(file);
