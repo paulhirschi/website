@@ -285,6 +285,10 @@ a {
   border: 2px solid #0375B4;
   border-radius: 5px;
 }
+.book img {
+  width: 100%;
+  max-width: 200px;
+}
 
 .book-audio {
   display: flex;
